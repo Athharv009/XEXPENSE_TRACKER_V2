@@ -1,0 +1,349 @@
+.expense-tracker {
+  color: #ffffff;
+  margin-bottom: 30px; /* added spacing between sections */
+  width: 100%;
+}
+
+.container {
+  background-color: #626262;
+  border-radius: 10px;
+  display: flex;
+  gap: 100px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.inner-container {
+  display: flex; /* stack wallet & expense vertically */
+  justify-content: center;
+  width: 63%;
+  height: 15%;
+  margin: 50px;
+  margin-right: 0px;
+  text-align: center;
+  gap: 50px;
+}
+
+.wallet-balance {
+  font-style: Regular;
+  background-color: #9b9b9b;
+  border-radius: 15px;
+  padding: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  gap: 20px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+.add-btn {
+  background-image: linear-gradient(to right, #b5dc52, #89e148);
+  color: #ffffff;
+  font-size: 16px;
+  width: 168px;
+  height: 38px;
+  font-weight: 700;
+  border-radius: 15px;
+  border-style: hidden;
+  cursor: pointer;
+}
+
+.expenses {
+  font-style: Regular;
+  background-color: #9b9b9b;
+  border-radius: 15px;
+  padding: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  gap: 20px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+.add-expense {
+  background-image: linear-gradient(to right, #ff9595, #ff4747, #ff3838);
+  color: #ffffff;
+  font-size: 16px;
+  width: 168px;
+  height: 38px;
+  font-weight: 700;
+  border-radius: 15px;
+  border-style: hidden;
+  cursor: pointer;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.expense-types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  gap: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans";
+}
+
+.small-rectangle-purple {
+  background-color: #a000ff;
+  width: 26px;
+  height: 8px;
+}
+.small-rectangle-orange {
+  background-color: #ff9304;
+  width: 26px;
+  height: 8px;
+}
+.small-rectangle-yellow {
+  background-color: #fde006;
+  width: 26px;
+  height: 8px;
+}
+
+.section-second1 {
+  margin: "20px" ;
+  display: "flex";
+  gap: "20px";
+}
+
+.transaction-container {
+  background-color: white;
+  color: black;
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.transactions-tracker {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 20px;
+}
+
+.recent-transactions {
+  width: 55%;
+}
+
+.top-expenses{
+  width: 40%;
+}
+
+.expenses-inside {
+  width: 100%;
+  height: 81%;
+}
+
+.add-expense-btn {
+  background: linear-gradient(0deg, #f4bb4a, #f4bb4a),
+    linear-gradient(0deg, #d9d9d9, #d9d9d9),
+    linear-gradient(0deg, #d9d9d9, #d9d9d9);
+  border-radius: 15px;
+  width: 255px;
+  border: none;
+  padding: 16px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  cursor: pointer;
+}
+
+.input {
+  background: linear-gradient(0deg, #fbfbfb, #fbfbfb),
+    linear-gradient(0deg, #d9d9d9, #d9d9d9),
+    linear-gradient(0deg, #d9d9d9, #d9d9d9);
+  border-radius: 15px;
+  border: none;
+  width: 223px;
+  color: #919191;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.select-input {
+  background: linear-gradient(0deg, #fbfbfb, #fbfbfb),
+    linear-gradient(0deg, #d9d9d9, #d9d9d9),
+    linear-gradient(0deg, #d9d9d9, #d9d9d9);
+  border-radius: 15px;
+  border: none;
+  width: 255px;
+  color: #919191;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cancel-btn {
+  background: linear-gradient(0deg, #e3e3e3, #e3e3e3),
+    linear-gradient(0deg, #d9d9d9, #d9d9d9),
+    linear-gradient(0deg, #d9d9d9, #d9d9d9);
+  border-radius: 15px;
+  border: none;
+  padding: 16px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: regular;
+  width: 112px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  cursor: pointer;
+}
+
+.transaction-mobile {
+  width: 100%;
+}
+
+.top-expenses-container {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 15px;
+  width: 90%;
+  margin-right: 1%;
+  height: 93%;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.product-expense{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.for-exp-price-edit{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.arrows{
+  background: linear-gradient(0deg, #F1F1F1, #F1F1F1),
+linear-gradient(0deg, #F1F1F1, #F1F1F1),
+linear-gradient(0deg, #F1F1F1, #F1F1F1),
+linear-gradient(0deg, #F1F1F1, #F1F1F1);
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  cursor: pointer;
+  padding: 11px;
+}
+
+.page-number {
+  border-radius: 5px;
+  background-color: #43967B;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  width: 37px;
+  height: 37px;
+  /* padding: 1px; */
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .top-expenses {
+    width: 100%;
+  }
+
+  .chart {
+    margin-bottom: 20px;
+  }
+
+  .product-expense{
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .for-exp-price-edit{
+    margin-left: 80px;
+    justify-content: space-between;
+  }
+
+  .wallet-balance,
+  .expenses {
+    margin: 20px;
+    height: 181px;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inner-container {
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    gap: 0px;
+  }
+
+  .transactions-tracker {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .expense-tracker {
+    width: 100%;
+  }
+
+  .transaction-container {
+    width: 96%;
+  }
+
+  .transaction-mobile {
+    margin-right: 20px;
+  }
+
+  .recent-transactions {
+    justify-content: center;
+    width: 96%;
+  }
+
+  .top-expenses-container{
+    margin-right: 0px;
+  }
+
+
+}
