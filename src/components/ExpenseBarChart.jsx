@@ -33,7 +33,7 @@ export default function ExpenseBarChart({ data = [] }) {
       {allZero ? (
         <div style={{ padding: "20px", fontSize: "16px", lineHeight: "2"}}>
           {orderedData.map((item) => (
-            <div style={{marginBottom: "50px"}} key={item.name}>{item.name}</div>
+            <div style={{marginBottom: "50px"}} key={item.name}>{item.name} -</div>
           ))}
         </div>
       ) : (
